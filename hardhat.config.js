@@ -94,6 +94,10 @@ module.exports = {
       url: apiUrls[ChainIds.HOLESKY],
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
     },
+    sumida: {
+      url: apiUrls[ChainIds.SUMIDA],
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
+    },
   },
   solidity: {
     compilers: [
@@ -145,6 +149,7 @@ module.exports = {
       rsk: process.env.BLOCKSCOUT_API_KEY,
       rskTestnet: process.env.BLOCKSCOUT_API_KEY,
       sepolia: process.env.ETHERSCAN_API_KEY,
+      sumida: process.env.BLOCKSCOUT_API_KEY,
     },
     customChains: [
       {
@@ -209,6 +214,14 @@ module.exports = {
         urls: {
           apiURL: explorerApiUrls[ChainIds.ARBITRUMSEPOLIA],
           browserURL: explorerUrls[ChainIds.ARBITRUMSEPOLIA],
+        },
+      },
+      {
+        network: 'sumida',
+        chainId: ChainIds.SUMIDA,
+        urls: {
+          apiURL: explorerApiUrls[ChainIds.SUMIDA],
+          browserURL: explorerUrls[ChainIds.SUMIDA],
         },
       },
     ],

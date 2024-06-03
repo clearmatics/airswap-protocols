@@ -28,6 +28,7 @@ export enum ChainIds {
   BASESEPOLIA = 84532,
   ARBITRUMSEPOLIA = 421614,
   SEPOLIA = 11155111,
+  SUMIDA = 65100002,
 }
 
 export const mainnets: number[] = [
@@ -53,6 +54,7 @@ export const testnets: number[] = [
   ChainIds.BASESEPOLIA,
   ChainIds.ARBITRUMSEPOLIA,
   ChainIds.SEPOLIA,
+  ChainIds.SUMIDA,
 ]
 
 export const chainLabels: Record<number, string> = {
@@ -76,6 +78,7 @@ export const chainLabels: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'BASESEPOLIA',
   [ChainIds.ARBITRUMSEPOLIA]: 'ARBITRUMSEPOLIA',
   [ChainIds.SEPOLIA]: 'SEPOLIA',
+  [ChainIds.SUMIDA]: 'SUMIDA',
 }
 
 export const chainNames: Record<number, string> = {
@@ -99,6 +102,7 @@ export const chainNames: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'Base Sepolia',
   [ChainIds.ARBITRUMSEPOLIA]: 'Arbitrum Sepolia',
   [ChainIds.SEPOLIA]: 'Sepolia',
+  [ChainIds.SUMIDA]: 'Autonity Piccadilly (Sumida) Testnet',
 }
 
 export const chainCurrencies: Record<number, string> = {
@@ -122,6 +126,7 @@ export const chainCurrencies: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'ETH',
   [ChainIds.ARBITRUMSEPOLIA]: 'AETH',
   [ChainIds.SEPOLIA]: 'SepoliaETH',
+  [ChainIds.SUMIDA]: 'ATN',
 }
 
 export const currencyIcons: Record<number, number> = {
@@ -144,6 +149,7 @@ export const currencyIcons: Record<number, number> = {
   [ChainIds.BASESEPOLIA]: ChainIds.MAINNET,
   [ChainIds.ARBITRUMSEPOLIA]: ChainIds.MAINNET,
   [ChainIds.SEPOLIA]: ChainIds.MAINNET,
+  [ChainIds.SUMIDA]: ChainIds.MAINNET,
 }
 
 export const apiUrls: Record<number, string> = {
@@ -166,6 +172,7 @@ export const apiUrls: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'https://sepolia.base.org',
   [ChainIds.ARBITRUMSEPOLIA]: 'https://sepolia-rollup.arbitrum.io/rpc',
   [ChainIds.SEPOLIA]: 'https://ethereum-sepolia.publicnode.com',
+  [ChainIds.SUMIDA]: 'https://rpc2.piccadilly.autonity.org/',
 }
 
 export const explorerUrls: Record<number, string> = {
@@ -188,6 +195,7 @@ export const explorerUrls: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'https://sepolia.basescan.org',
   [ChainIds.ARBITRUMSEPOLIA]: 'https://sepolia.arbiscan.io',
   [ChainIds.SEPOLIA]: 'https://sepolia.etherscan.io',
+  [ChainIds.SUMIDA]: 'https://piccadilly.autonity.org',
 }
 
 export const explorerApiUrls: Record<number, string> = {
@@ -199,6 +207,7 @@ export const explorerApiUrls: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'https://api-sepolia.basescan.org/api',
   [ChainIds.BASE]: 'https://api.basescan.org/api',
   [ChainIds.ARBITRUMSEPOLIA]: 'https://api-sepolia.arbiscan.io/api',
+  [ChainIds.SUMIDA]: 'https://piccadilly.autonity.org/api',
 }
 
 export const stakingTokenAddresses: Record<number, string> = {
@@ -227,6 +236,7 @@ export const wrappedNativeTokenAddresses: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: '0x4200000000000000000000000000000000000006',
   [ChainIds.ARBITRUMSEPOLIA]: '0x0091f4e75a03c11cb9be8e3717219005eb780d89',
   [ChainIds.SEPOLIA]: '0x7b79995e5f793a07bc00c21412e50ecae098e7f9',
+  [ChainIds.SUMIDA]: '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2',
 }
 
 export const ownerAddresses: Record<number, string> = {
