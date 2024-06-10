@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+THISDIR="$(dirname "$0")"
+OUTDIR="$(realpath "${THISDIR}"/../dist)"
+mkdir -p "${OUTDIR}"
+
+for PACKAGEDIR in "${THISDIR}"/../tools/* "${THISDIR}"/../source/*; do
+    (
+        cd "${PACKAGEDIR}"
+        npm pack --pack-destination "${OUTDIR}"
+    )
+done
