@@ -29,7 +29,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@airswap/utils": "4.3.2",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz",
     "@openzeppelin/contracts": "^4.8.3",
     "prompt-confirm": "^2.0.4"
   }

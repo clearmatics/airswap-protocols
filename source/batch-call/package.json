@@ -26,9 +26,9 @@
     "owners": "hardhat run ./scripts/owner.js"
   },
   "devDependencies": {
-    "@airswap/utils": "4.3.2",
-    "@airswap/swap": "4.2.2",
-    "@airswap/swap-erc20": "4.3.1",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz",
+    "@airswap/swap": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-4.2.2.tgz",
+    "@airswap/swap-erc20": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-erc20-4.3.1.tgz",
     "@openzeppelin/contracts": "^4.8.3",
     "prompt-confirm": "^2.0.4"
   },
