@@ -223,6 +223,8 @@ export const stakingTokenAddresses: Record<number, string> = {
   [ChainIds.MAINNET]: '0x27054b13b1b798b345b591a4d22e6562d47ea75a',
   [ChainIds.SEPOLIA]: '0x4092d6dba9abb7450b9d91aa7ed2712935d63b39',
   [ChainIds.HOLESKY]: '0x4092d6dba9abb7450b9d91aa7ed2712935d63b39',
+  [ChainIds.DEVNET]: '0xBd770416a3345F91E4B34576cb804a576fa48EB1',
+  [ChainIds.SUMIDA]: '0xBd770416a3345F91E4B34576cb804a576fa48EB1',
 }
 
 export const wrappedNativeTokenAddresses: Record<number, string> = {
