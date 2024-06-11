@@ -4,7 +4,7 @@
 
 "@airswap/batch-call@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-batch-call-4.2.3.tgz":
   version "4.2.3"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-batch-call-4.2.3.tgz#c3686af5c4e593c855672beef92384af1dbeeeeb"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-batch-call-4.2.3.tgz#120488528b955d9f5994c16e8eb9b5f6068120d1"
 
 "@airswap/jsonrpc-client-websocket@0.0.1":
   version "0.0.1"
@@ -24,31 +24,31 @@
 
 "@airswap/pool@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-pool-4.2.2.tgz":
   version "4.2.2"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-pool-4.2.2.tgz#809976abb1f50d28ceab621a4c30665af7127fa4"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-pool-4.2.2.tgz#234a4c90c0813e6335eea26c5ed5bb0b3ee06500"
 
 "@airswap/registry@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-registry-4.2.2.tgz":
   version "4.2.2"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-registry-4.2.2.tgz#5d0cd11d73dabcaf41efd0fdc95901e5fc0d751c"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-registry-4.2.2.tgz#2303fa0db293ec9b907aab694f7cb34625af8477"
 
 "@airswap/staking@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-staking-4.2.2.tgz":
   version "4.2.2"
-  uid "9869012451c69b34a6b10823d1b147752df0c3e1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-staking-4.2.2.tgz#9869012451c69b34a6b10823d1b147752df0c3e1"
+  uid "71e6847e98b2194432d7142d51b99f819a7a4b00"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-staking-4.2.2.tgz#71e6847e98b2194432d7142d51b99f819a7a4b00"
 
 "@airswap/swap-erc20@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-erc20-4.3.1.tgz":
   version "4.3.1"
-  uid "0c443ffd9bedd0cb1829fae5e3765d1d80216bb7"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-erc20-4.3.1.tgz#0c443ffd9bedd0cb1829fae5e3765d1d80216bb7"
+  uid "3ebc3b207d3b5b22705f9ef3cb89603f2c9f59c7"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-erc20-4.3.1.tgz#3ebc3b207d3b5b22705f9ef3cb89603f2c9f59c7"
 
 "@airswap/swap@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-4.2.2.tgz":
   version "4.2.2"
-  uid "5a508244e4233a8165f67045f41fd7897e31d74a"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-4.2.2.tgz#5a508244e4233a8165f67045f41fd7897e31d74a"
+  uid "8a96352f95fd4558c83ea220881cf8441483a82d"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-swap-4.2.2.tgz#8a96352f95fd4558c83ea220881cf8441483a82d"
 
 "@airswap/utils@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz":
   version "4.3.2"
-  uid "13c7de26f0be81f8e17ea9bd71108866b9582ddd"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz#13c7de26f0be81f8e17ea9bd71108866b9582ddd"
+  uid "0a825488a650e24a2a0235df5d6307dac34ce6cc"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz#0a825488a650e24a2a0235df5d6307dac34ce6cc"
   dependencies:
     "@metamask/eth-sig-util" "^5.0.2"
     "@uniswap/token-lists" "^1.0.0-beta.24"
@@ -60,7 +60,7 @@
 
 "@airswap/wrapper@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-wrapper-4.2.3.tgz":
   version "4.2.3"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-wrapper-4.2.3.tgz#e9f075a793ef86526baa04dfbc06114082acb68c"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-wrapper-4.2.3.tgz#32394ecdb069057d2f754fdbd82fd0364b6de4d7"
 
 "@babel/code-frame@^7.0.0":
   version "7.24.7"
