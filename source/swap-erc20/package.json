@@ -9,6 +9,7 @@
   },
   "files": [
     "./build",
+    "./contracts",
     "./typechain",
     "./deploys.js",
     "./deploys-blocks.js",
