@@ -4,7 +4,7 @@
   "description": "AirSwap: Utilities for Developers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/airswap/airswap-protocols"
+    "url": "https://github.com/clearmatics/airswap-protocols"
   },
   "keywords": [
     "airswap"
