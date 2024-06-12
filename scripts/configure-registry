@@ -1,0 +1,84 @@
+#!/bin/bash -eu
+
+PROTOCOLS="0x02ad05d3 0x395ca9f1 0x85ccc7d5 0x9498325a"
+TOKENLIST="$(dirname "$0")/../dist/tokenlist.json"
+
+for cmd in airswap expect jq; do
+    if ! type "${cmd}" &>/dev/null; then
+        echo "Missing dependency: ${cmd}" >&2
+        exit 1
+    fi
+done
+
+if ! [[ -f "${TOKENLIST}" ]]; then
+    echo "Missing dist/tokenlist.json; generate token list first" >&2
+    exit 1
+fi
+
+source "$(dirname "$0")/../.env" ||:
+
+if [[ -z "${PRIVATE_KEY:-}" ]]; then
+    echo "Missing environment variable: PRIVATE_KEY" >&2
+    exit 1
+fi
+
+if [[ -z "${SERVER_URL:-}" ]]; then
+    echo "Missing environment variable: SERVER_URL" >&2
+    exit 1
+fi
+
+CHAIN_ID="$(jq -r .tokens[0].chainId "${TOKENLIST}")"
+
+expect <<-DONE
+	spawn airswap chain
+	expect "New chain id"
+	send -- "${CHAIN_ID}\r"
+	expect EOF
+	DONE
+
+expect <<-DONE
+	spawn airswap account:import
+	expect "Private key"
+	send -- "${PRIVATE_KEY}\r"
+	expect EOF
+	DONE
+
+expect <<-DONE
+	spawn airswap registry:approve
+	expect "Type*to send"
+	send -- "yes\r"
+	expect EOF
+	DONE
+
+expect <<-DONE
+	spawn airswap registry:url
+	expect "server url"
+	send -- "${SERVER_URL}\r"
+	expect "Type*to send"
+	send -- "yes\r"
+	expect EOF
+	DONE
+
+for protocol in ${PROTOCOLS}; do
+    expect <<-DONE
+		spawn airswap protocols:add
+		expect "protocol id to activate"
+		send -- "${protocol}\r"
+		expect "Type*to send"
+		send -- "yes\r"
+		expect EOF
+		DONE
+done
+
+airswap metadata:update
+
+TOKENS="$(echo -n "$(jq -r '.tokens[].symbol' "${TOKENLIST}")" | tr ' ' ',')"
+
+expect <<-DONE
+	spawn airswap tokens:add
+	expect "token symbols to activate"
+	send -- "${TOKENS}"
+	expect "Type*to send"
+	send -- "yes\r"
+	expect EOF
+	DONE
