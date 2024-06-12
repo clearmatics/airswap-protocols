@@ -41,4 +41,7 @@ export default {
   [ChainIds.LINEA]: [
     'https://raw.githubusercontent.com/Consensys/linea-token-list/main/json/linea-mainnet-token-shortlist.json',
   ],
+  [ChainIds.DEVNET]: [
+    'https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/tokenlist.json',
+  ],
 } as Record<number, string[]>

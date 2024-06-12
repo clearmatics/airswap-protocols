@@ -54,6 +54,18 @@
     lz-string "^1.5.0"
     valid-url "^1.0.9"
 
+"@airswap/utils@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.2.tgz":
+  version "4.3.2-autonity.2"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.2.tgz#15b9497e035ff65db77a068f302ec1c6a12174f0"
+  dependencies:
+    "@metamask/eth-sig-util" "^5.0.2"
+    "@uniswap/token-lists" "^1.0.0-beta.24"
+    bignumber.js "^9.0.1"
+    ethereumjs-util "^7.1.5"
+    ethers "^5.7.2"
+    lz-string "^1.5.0"
+    valid-url "^1.0.9"
+
 "@airswap/wrapper@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-wrapper-4.2.3-autonity.1.tgz":
   version "4.2.3-autonity.1"
   resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-wrapper-4.2.3-autonity.1.tgz#d516bf8d27d0bbc938f29626e1a9c2ca1ea06fbe"
