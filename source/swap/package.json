@@ -1,6 +1,6 @@
 {
   "name": "@airswap/swap",
-  "version": "4.2.2",
+  "version": "4.2.2-autonity.1",
   "description": "AirSwap: Atomic Token Swap",
   "license": "MIT",
   "repository": {
@@ -30,7 +30,7 @@
     "owners": "hardhat run ./scripts/owner.js"
   },
   "devDependencies": {
-    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
     "@openzeppelin/contracts": "^4.8.3"
   },

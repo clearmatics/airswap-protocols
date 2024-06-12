@@ -1,6 +1,6 @@
 {
   "name": "@airswap/pool",
-  "version": "4.2.2",
+  "version": "4.2.2-autonity.1",
   "description": "AirSwap: Withdrawable Token Pool",
   "license": "MIT",
   "repository": {
@@ -28,7 +28,7 @@
     "balances": "hardhat run ./scripts/balances.js"
   },
   "devDependencies": {
-    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-v1/airswap-utils-4.3.2.tgz",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz",
     "@airswap/merkle": "0.0.2",
     "@openzeppelin/contracts": "^4.8.3",
     "prompt-confirm": "^2.0.4"
