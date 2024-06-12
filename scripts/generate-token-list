@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+const util = require('node:util')
+const exec = util.promisify(require('node:child_process').exec)
+
+const logoURI = 'https://docs.autonity.org/_assets/images/logo-autonity.svg'
+
+async function main() {
+  if (process.argv.length < 3) {
+    console.error(`Usage: ${__filename} <genesis.json>`)
+    process.exit(1)
+  }
+  const genesis = require(process.argv[2])
+
+  const validatorAddrs = genesis.config.autonity.validators.map(
+    (validator) => validator.nodeAddress
+  )
+
+  const chainId = JSON.parse((await exec(`aut node info`)).stdout).eth_chainId
+
+  const validators = (
+    await Promise.all(
+      validatorAddrs.map((addr) =>
+        exec(`aut validator info --validator ${addr}`)
+      )
+    )
+  ).map((result) => JSON.parse(result.stdout))
+
+  const tokenlist = {
+    tokens: validators.map((validator, i) => ({
+      address: validator.liquid_contract,
+      name: `Liquid NTN for validator ${validator.node_address}`,
+      symbol: `LNTN${i}`,
+      decimals: 18,
+      logoURI,
+      chainId,
+    })),
+  }
+
+  console.log(JSON.stringify(tokenlist))
+}
+
+main()
