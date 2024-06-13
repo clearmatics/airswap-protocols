@@ -20,14 +20,32 @@
 
 ## Dependency graph
 
-```
-utils .-> stores -------------------------------------------------.
-      |-> pool ---------------------------------.                 V
-      |-> registry -----------------------------+-> libraries .-> airswap-ref-server
-      |-> staking -> swap-erc20 .-> wrapper ----|             |-> airswap-cli
-      |                         `-> batch-call -'             `-> airswap-web
-      |                             A
-      `-> swap ---------------------'
+```mermaid
+flowchart TD;
+  utils-->stores;
+  utils-->pool;
+  utils-->registry;
+  utils-->staking;
+  utils-->swap;
+  utils-->swap-erc20;
+  utils-->wrapper;
+  utils-->batch-call;
+  staking-->swap-erc20;
+  swap-erc20-->wrapper;
+  swap-erc20-->batch-call;
+  swap-->batch-call;
+  utils-->libraries;
+  pool-->libraries;
+  registry-->libraries;
+  staking-->libraries;
+  swap-->libraries;
+  swap-erc20-->libraries;
+  wrapper-->libraries;
+  batch-call-->libraries;
+  libraries-->airswap-ref-server;
+  stores-->airswap-ref-server;
+  libraries-->airswap-cli;
+  libraries-->airswap-web;
 ```
 
 ## How to add a new network
