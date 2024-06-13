@@ -3,37 +3,48 @@
 const util = require('node:util')
 const exec = util.promisify(require('node:child_process').exec)
 
-const logoURI = 'https://docs.autonity.org/_assets/images/logo-autonity.svg'
+const logoURI = 'https://piccadilly.autonity.org/assets/network_icon_dark.svg'
 
 async function main() {
   if (process.argv.length < 3) {
     console.error(`Usage: ${__filename} <genesis.json>`)
     process.exit(1)
   }
+
   const genesis = require(process.argv[2])
 
   const validatorAddrs = genesis.config.autonity.validators.map(
     (validator) => validator.nodeAddress
   )
 
-  const chainId = JSON.parse((await exec(`aut node info`)).stdout).eth_chainId
-
-  const validators = (
-    await Promise.all(
-      validatorAddrs.map((addr) =>
-        exec(`aut validator info --validator ${addr}`)
+  const validators = await Promise.all(
+    validatorAddrs.map(async (addr) => {
+      const validator = JSON.parse(
+        (await exec(`aut validator info --validator ${addr}`)).stdout
       )
-    )
-  ).map((result) => JSON.parse(result.stdout))
+
+      validator.token_symbol = (
+        await exec(`aut token symbol --token ${validator.liquid_contract}`)
+      ).stdout.trim()
+
+      validator.token_decimals = parseInt(
+        (
+          await exec(`aut token decimals --token ${validator.liquid_contract}`)
+        ).stdout.trim()
+      )
+
+      return validator
+    })
+  )
 
   const tokenlist = {
-    tokens: validators.map((validator, i) => ({
+    tokens: validators.map((validator) => ({
       address: validator.liquid_contract,
-      name: `Liquid NTN for validator ${validator.node_address}`,
-      symbol: `LNTN${i}`,
-      decimals: 18,
+      name: `Liquid Newton for validator ${validator.node_address}`,
+      symbol: validator.token_symbol,
+      decimals: validator.token_decimals,
+      chainId: genesis.config.chainId,
       logoURI,
-      chainId,
     })),
   }
 
