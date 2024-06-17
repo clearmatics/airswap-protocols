@@ -247,8 +247,6 @@ export const wrappedNativeTokenAddresses: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: '0x4200000000000000000000000000000000000006',
   [ChainIds.ARBITRUMSEPOLIA]: '0x0091f4e75a03c11cb9be8e3717219005eb780d89',
   [ChainIds.SEPOLIA]: '0x7b79995e5f793a07bc00c21412e50ecae098e7f9',
-  [ChainIds.DEVNET]: '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2',
-  [ChainIds.SUMIDA]: '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2',
 }
 
 export const ownerAddresses: Record<number, string> = {

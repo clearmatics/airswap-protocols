@@ -45,18 +45,4 @@ export default [
     name: 'USDC',
     symbol: 'USDC',
   },
-  {
-    address: '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2',
-    chainId: ChainIds.DEVNET,
-    decimals: 18,
-    name: 'Wrapped ATN',
-    symbol: 'WATN',
-  },
-  {
-    address: '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2',
-    chainId: ChainIds.SUMIDA,
-    decimals: 18,
-    name: 'Wrapped ATN',
-    symbol: 'WATN',
-  },
 ] as TokenInfo[]

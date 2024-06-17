@@ -56,7 +56,6 @@ flowchart TD;
 1. Create a new release on GitHub and upload `dist/tokenlist.json`
 1. Add configuration parameters to the following files:
     - [`tools/utils/src/constants.ts`](./tools/utils/src/constants.ts)
-    - [`tools/utils/src/tokendefaults.ts`](./tools/utils/src/tokendefaults.ts)
     - [`tools/utils/src/tokenlists.ts`](./tools/utils/src/tokenlists.ts)
     - [`hardhat.config.js`](./hardhat.config.js)
     - [`source/registry/scripts/config.js`](./source/registry/scripts/config.js)
