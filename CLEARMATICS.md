@@ -51,9 +51,8 @@ flowchart TD;
 ## How to add a new network
 
 1. Install Node v18.19.0 and install dependencies with `yarn`
-1. Download the genesis file of the network
-1. Generate token list for the genesis validators' LNTN contracts with
-   `yarn tokenlist <genesis-file>`
+1. Download the genesis file of the network and find the USDC contract address
+1. Generate token list with `yarn tokenlist <genesis-file> <usdc-token-address>`
 1. Create a new release on GitHub and upload `dist/tokenlist.json`
 1. Add configuration parameters to the following files:
     - [`tools/utils/src/constants.ts`](./tools/utils/src/constants.ts)
