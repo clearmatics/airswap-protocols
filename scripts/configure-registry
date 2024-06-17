@@ -2,6 +2,8 @@
 
 PROTOCOLS="0x02ad05d3 0x395ca9f1 0x85ccc7d5 0x9498325a"
 TOKENLIST="$(dirname "$0")/../dist/tokenlist.json"
+NTN_SYMBOL='NTN'
+USDC_SYMBOL='tUSDC.pol'
 
 for cmd in airswap expect jq; do
     if ! type "${cmd}" &>/dev/null; then
@@ -77,7 +79,7 @@ TOKENS="$(echo -n "$(jq -r '.tokens[].symbol' "${TOKENLIST}")" | tr ' ' ',')"
 expect <<-DONE
 	spawn airswap tokens:add
 	expect "token symbols to activate"
-	send -- "${TOKENS}"
+	send -- "${NTN_SYMBOL},${USDC_SYMBOL},${TOKENS}"
 	expect "Type*to send"
 	send -- "yes\r"
 	expect EOF
