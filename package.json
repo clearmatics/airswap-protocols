@@ -21,8 +21,7 @@
     "test:ci": "lerna run test:ci",
     "drain": "node ./scripts/drain-deployer.js",
     "prepare": "husky install",
-    "prettier": "prettier --write \"./**/*.sol\" \"./**/*.ts\" \"./**/*.js\" \"./**/*.json\"",
-    "tokenlist": "mkdir -p dist && ./scripts/generate-token-list >dist/tokenlist.json"
+    "prettier": "prettier --write \"./**/*.sol\" \"./**/*.ts\" \"./**/*.js\" \"./**/*.json\""
   },
   "devDependencies": {
     "@ensdomains/ens": "^0.4.4",
