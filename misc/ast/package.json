@@ -1,0 +1,14 @@
+{
+  "name": "@airswap/ast",
+  "version": "0.0.1-autonity.1",
+  "description": "AirSwap Token",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./cache && rm -rf ./build",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run ./scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.8.3"
+  }
+}

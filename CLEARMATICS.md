@@ -55,6 +55,7 @@ flowchart TD;
 1. Generate token list with
    `scripts/generate-token-list <genesis-file> <usdc-token-address>`
 1. Create a new release on GitHub and upload `dist/tokenlist.json`
+1. Deploy the mock AirSwap token from [`misc/ast`](./misc/ast)
 1. Add configuration parameters to the following files:
     - [`tools/utils/src/constants.ts`](./tools/utils/src/constants.ts)
     - [`tools/utils/src/tokenlists.ts`](./tools/utils/src/tokenlists.ts)
