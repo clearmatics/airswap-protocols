@@ -60,6 +60,8 @@ flowchart TD;
     - [`tools/utils/src/tokenlists.ts`](./tools/utils/src/tokenlists.ts)
     - [`hardhat.config.js`](./hardhat.config.js)
     - [`source/registry/scripts/config.js`](./source/registry/scripts/config.js)
+    - [`source/swap/scripts/config.js`](./source/swap/scripts/config.js)
+    - [`source/swap-erc20/scripts/config.js`](./source/swap-erc20/scripts/config.js)
     - [`source/wrapper/deploys-weth.js`](./source/wrapper/deploys-weth.js)
 1. Bump version number in `tools/utils/package.json` and commit the changes
 1. Rebuild `@tools/utils` with `yarn compile` and create a new package with `npm pack`

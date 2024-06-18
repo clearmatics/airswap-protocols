@@ -5,4 +5,8 @@ module.exports = {
     requiredSenderKind: TokenKinds.ERC20,
     protocolFee: 5,
   },
+  [ChainIds.DEVNET]: {
+    requiredSenderKind: TokenKinds.ERC20,
+    protocolFee: 0,
+  },
 }

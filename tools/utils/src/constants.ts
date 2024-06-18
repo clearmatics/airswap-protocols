@@ -264,6 +264,7 @@ export const ownerAddresses: Record<number, string> = {
 
 export const protocolFeeReceiverAddresses: Record<number, string> = {
   [ChainIds.MAINNET]: '0xaD30f7EEBD9Bd5150a256F47DA41d4403033CdF0',
+  [ChainIds.DEVNET]: '0x455777268Bd43C983ba82D9DE4efa0445af99D96',
 }
 
 export enum ProtocolIds {
