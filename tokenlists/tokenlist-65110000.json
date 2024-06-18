@@ -1,0 +1,100 @@
+{
+  "tokens": [
+    {
+      "address": "0xBd770416a3345F91E4B34576cb804a576fa48EB1",
+      "name": "Newton",
+      "symbol": "NTN",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0xf92De0c98007EBaDa22E138A881710B82C513Da0",
+      "name": "Mock USD Coin",
+      "symbol": "tUSDC.pol",
+      "decimals": 6,
+      "chainId": 65110000,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png"
+    },
+    {
+      "address": "0xf4D9599aFd90B5038b18e3B551Bc21a97ed21c37",
+      "name": "Liquid Newton for validator 0xBaf935b88066021a0B0BD34cEB2Ba10389b6Aa0D",
+      "symbol": "LNTN-0",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0x109F93893aF4C4b0afC7A9e97B59991260F98313",
+      "name": "Liquid Newton for validator 0x889Dcd8Ca57AB1108e73E9B02B2C2Cb09Ea9b19e",
+      "symbol": "LNTN-1",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0x689856e2A6Eb68FC33099eb2CCBA0A5a4e8be52F",
+      "name": "Liquid Newton for validator 0xEA75934E9Fc938609B9C745e3b738F4d1eDC5D07",
+      "symbol": "LNTN-2",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0x2B0f159443599FBB6723CDB33d0DB94F96B95d0F",
+      "name": "Liquid Newton for validator 0xd97247c264f50FC287721ce949948BA40FCd88b6",
+      "symbol": "LNTN-3",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0xC500751c4F96d49B954D20EAE42Fa29278B96beB",
+      "name": "Liquid Newton for validator 0xB4E427D4e8285DA5CB2C4B3BD22cf57F6a65E922",
+      "symbol": "LNTN-4",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0x79fFc4A1C5E13Ed7781C1F2e1795d79A3de2747C",
+      "name": "Liquid Newton for validator 0x01fd244de85Fe49B2cBC5F2274a9B009fab367b5",
+      "symbol": "LNTN-5",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0x589B0da28eb8432A1c3d3872Ca996813B508973C",
+      "name": "Liquid Newton for validator 0xD4f2A15bdbF29BEb2C2184A3Eee5333734AeA8FE",
+      "symbol": "LNTN-6",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0x28A756455F07ef93f31EF468D3bc0d17e020B320",
+      "name": "Liquid Newton for validator 0x953281c109681f1aca5b9A445d1948eebea20f7e",
+      "symbol": "LNTN-7",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0xbf257BfB97074e5DED578eB919e0Dfa5325393b3",
+      "name": "Liquid Newton for validator 0x10f31c0c7123C82f982F27A3eE7f58FA4F347fdf",
+      "symbol": "LNTN-8",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    },
+    {
+      "address": "0xAA63FAA49854D8E1F0657d9ff9496830d9Ae754F",
+      "name": "Liquid Newton for validator 0x1e40eA9631af6a94258E1fa885886fDfd93c29CC",
+      "symbol": "LNTN-9",
+      "decimals": 18,
+      "chainId": 65110000,
+      "logoURI": "https://piccadilly.autonity.org/assets/network_icon_dark.svg"
+    }
+  ]
+}
