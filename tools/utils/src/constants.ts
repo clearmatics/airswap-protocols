@@ -28,8 +28,7 @@ export enum ChainIds {
   BASESEPOLIA = 84532,
   ARBITRUMSEPOLIA = 421614,
   SEPOLIA = 11155111,
-  DEVNET = 65110000,
-  SUMIDA = 65100002,
+  PICCADILLY = 65100003,
 }
 
 export const mainnets: number[] = [
@@ -55,8 +54,7 @@ export const testnets: number[] = [
   ChainIds.BASESEPOLIA,
   ChainIds.ARBITRUMSEPOLIA,
   ChainIds.SEPOLIA,
-  ChainIds.DEVNET,
-  ChainIds.SUMIDA,
+  ChainIds.PICCADILLY,
 ]
 
 export const chainLabels: Record<number, string> = {
@@ -80,8 +78,7 @@ export const chainLabels: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'BASESEPOLIA',
   [ChainIds.ARBITRUMSEPOLIA]: 'ARBITRUMSEPOLIA',
   [ChainIds.SEPOLIA]: 'SEPOLIA',
-  [ChainIds.DEVNET]: 'DEVNET',
-  [ChainIds.SUMIDA]: 'SUMIDA',
+  [ChainIds.PICCADILLY]: 'PICCADILLY',
 }
 
 export const chainNames: Record<number, string> = {
@@ -105,8 +102,7 @@ export const chainNames: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'Base Sepolia',
   [ChainIds.ARBITRUMSEPOLIA]: 'Arbitrum Sepolia',
   [ChainIds.SEPOLIA]: 'Sepolia',
-  [ChainIds.DEVNET]: 'Autonity DevNet',
-  [ChainIds.SUMIDA]: 'Autonity Piccadilly (Sumida) Testnet',
+  [ChainIds.PICCADILLY]: 'Autonity Piccadilly (Yamuna) Testnet',
 }
 
 export const chainCurrencies: Record<number, string> = {
@@ -130,8 +126,7 @@ export const chainCurrencies: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'ETH',
   [ChainIds.ARBITRUMSEPOLIA]: 'AETH',
   [ChainIds.SEPOLIA]: 'SepoliaETH',
-  [ChainIds.DEVNET]: 'ATN',
-  [ChainIds.SUMIDA]: 'ATN',
+  [ChainIds.PICCADILLY]: 'ATN',
 }
 
 export const currencyIcons: Record<number, number> = {
@@ -154,8 +149,7 @@ export const currencyIcons: Record<number, number> = {
   [ChainIds.BASESEPOLIA]: ChainIds.MAINNET,
   [ChainIds.ARBITRUMSEPOLIA]: ChainIds.MAINNET,
   [ChainIds.SEPOLIA]: ChainIds.MAINNET,
-  [ChainIds.DEVNET]: ChainIds.MAINNET,
-  [ChainIds.SUMIDA]: ChainIds.MAINNET,
+  [ChainIds.PICCADILLY]: ChainIds.MAINNET,
 }
 
 export const apiUrls: Record<number, string> = {
@@ -178,8 +172,7 @@ export const apiUrls: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'https://sepolia.base.org',
   [ChainIds.ARBITRUMSEPOLIA]: 'https://sepolia-rollup.arbitrum.io/rpc',
   [ChainIds.SEPOLIA]: 'https://ethereum-sepolia.publicnode.com',
-  [ChainIds.DEVNET]: 'https://rpc0.devnet.clearmatics.network/',
-  [ChainIds.SUMIDA]: 'https://rpc2.piccadilly.autonity.org/',
+  [ChainIds.PICCADILLY]: 'https://rpc2.piccadilly.autonity.org/',
 }
 
 export const explorerUrls: Record<number, string> = {
@@ -202,8 +195,7 @@ export const explorerUrls: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'https://sepolia.basescan.org',
   [ChainIds.ARBITRUMSEPOLIA]: 'https://sepolia.arbiscan.io',
   [ChainIds.SEPOLIA]: 'https://sepolia.etherscan.io',
-  [ChainIds.DEVNET]: 'https://explorer-v2.devnet.clearmatics.network',
-  [ChainIds.SUMIDA]: 'https://piccadilly.autonity.org',
+  [ChainIds.PICCADILLY]: 'https://piccadilly.autonity.org',
 }
 
 export const explorerApiUrls: Record<number, string> = {
@@ -215,16 +207,14 @@ export const explorerApiUrls: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: 'https://api-sepolia.basescan.org/api',
   [ChainIds.BASE]: 'https://api.basescan.org/api',
   [ChainIds.ARBITRUMSEPOLIA]: 'https://api-sepolia.arbiscan.io/api',
-  [ChainIds.DEVNET]: 'https://explorer-v2.devnet.clearmatics.network/api',
-  [ChainIds.SUMIDA]: 'https://piccadilly.autonity.org/api',
+  [ChainIds.PICCADILLY]: 'https://piccadilly.autonity.org/api',
 }
 
 export const stakingTokenAddresses: Record<number, string> = {
   [ChainIds.MAINNET]: '0x27054b13b1b798b345b591a4d22e6562d47ea75a',
   [ChainIds.SEPOLIA]: '0x4092d6dba9abb7450b9d91aa7ed2712935d63b39',
   [ChainIds.HOLESKY]: '0x4092d6dba9abb7450b9d91aa7ed2712935d63b39',
-  [ChainIds.DEVNET]: '0xA09C5Da126D519E0eFC2B4BfE5C5088107E67ece',
-  [ChainIds.SUMIDA]: '0xBd770416a3345F91E4B34576cb804a576fa48EB1',
+  [ChainIds.PICCADILLY]: '0xA727fCB135cbd124c5601f26d6C5b684449A499A',
 }
 
 export const wrappedNativeTokenAddresses: Record<number, string> = {
@@ -247,6 +237,7 @@ export const wrappedNativeTokenAddresses: Record<number, string> = {
   [ChainIds.BASESEPOLIA]: '0x4200000000000000000000000000000000000006',
   [ChainIds.ARBITRUMSEPOLIA]: '0x0091f4e75a03c11cb9be8e3717219005eb780d89',
   [ChainIds.SEPOLIA]: '0x7b79995e5f793a07bc00c21412e50ecae098e7f9',
+  [ChainIds.PICCADILLY]: '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2',
 }
 
 export const ownerAddresses: Record<number, string> = {
@@ -264,7 +255,7 @@ export const ownerAddresses: Record<number, string> = {
 
 export const protocolFeeReceiverAddresses: Record<number, string> = {
   [ChainIds.MAINNET]: '0xaD30f7EEBD9Bd5150a256F47DA41d4403033CdF0',
-  [ChainIds.DEVNET]: '0x455777268Bd43C983ba82D9DE4efa0445af99D96',
+  [ChainIds.PICCADILLY]: '0xCDB3D66635D9E27a83fF588019Aeb413B5C73551',
 }
 
 export enum ProtocolIds {

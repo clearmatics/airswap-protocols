@@ -94,12 +94,8 @@ module.exports = {
       url: apiUrls[ChainIds.HOLESKY],
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
     },
-    devnet: {
-      url: apiUrls[ChainIds.DEVNET],
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
-    },
-    sumida: {
-      url: apiUrls[ChainIds.SUMIDA],
+    piccadilly: {
+      url: apiUrls[ChainIds.PICCADILLY],
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
     },
   },
@@ -153,8 +149,7 @@ module.exports = {
       rsk: process.env.BLOCKSCOUT_API_KEY,
       rskTestnet: process.env.BLOCKSCOUT_API_KEY,
       sepolia: process.env.ETHERSCAN_API_KEY,
-      devnet: process.env.BLOCKSCOUT_API_KEY,
-      sumida: process.env.BLOCKSCOUT_API_KEY,
+      piccadilly: process.env.BLOCKSCOUT_API_KEY,
     },
     customChains: [
       {
@@ -222,19 +217,11 @@ module.exports = {
         },
       },
       {
-        network: 'devnet',
-        chainId: ChainIds.DEVNET,
+        network: 'piccadilly',
+        chainId: ChainIds.PICCADILLY,
         urls: {
-          apiURL: explorerApiUrls[ChainIds.DEVNET],
-          browserURL: explorerUrls[ChainIds.DEVNET],
-        },
-      },
-      {
-        network: 'sumida',
-        chainId: ChainIds.SUMIDA,
-        urls: {
-          apiURL: explorerApiUrls[ChainIds.SUMIDA],
-          browserURL: explorerUrls[ChainIds.SUMIDA],
+          apiURL: explorerApiUrls[ChainIds.PICCADILLY],
+          browserURL: explorerUrls[ChainIds.PICCADILLY],
         },
       },
     ],

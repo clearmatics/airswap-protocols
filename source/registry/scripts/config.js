@@ -97,13 +97,8 @@ module.exports = {
     stakingCost: '1000000000000000000000',
     supportCost: '10000000000000000000',
   },
-  [ChainIds.DEVNET]: {
-    stakingToken: stakingTokenAddresses[ChainIds.DEVNET],
-    stakingCost: '0',
-    supportCost: '0',
-  },
-  [ChainIds.SUMIDA]: {
-    stakingToken: stakingTokenAddresses[ChainIds.SUMIDA],
+  [ChainIds.PICCADILLY]: {
+    stakingToken: stakingTokenAddresses[ChainIds.PICCADILLY],
     stakingCost: '0',
     supportCost: '0',
   },

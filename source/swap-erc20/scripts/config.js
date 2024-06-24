@@ -7,7 +7,7 @@ module.exports = {
     bonusScale: 10,
     bonusMax: 100,
   },
-  [ChainIds.DEVNET]: {
+  [ChainIds.PICCADILLY]: {
     protocolFee: 0,
     protocolFeeLight: 0,
     bonusScale: 10,

@@ -41,7 +41,7 @@ export default {
   [ChainIds.LINEA]: [
     'https://raw.githubusercontent.com/Consensys/linea-token-list/main/json/linea-mainnet-token-shortlist.json',
   ],
-  [ChainIds.DEVNET]: [
-    'https://raw.githubusercontent.com/clearmatics/airswap-protocols/autonity/tokenlists/tokenlist-65110000.json',
+  [ChainIds.PICCADILLY]: [
+    `https://raw.githubusercontent.com/clearmatics/airswap-protocols/autonity/tokenlists/tokenlist-65100003.json`,
   ],
 } as Record<number, string[]>
