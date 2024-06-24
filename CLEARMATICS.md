@@ -53,9 +53,8 @@ flowchart TD;
 1. Install Node v18.19.0 and install dependencies with `yarn`
 1. Download the genesis file of the network and find the USDC contract address
 1. Generate token list with
-   `scripts/generate-token-list <genesis-file> <usdc-token-address>`
-1. Create a new release on GitHub and upload `dist/tokenlist.json`
-1. Deploy the mock AirSwap token from [`misc/ast`](./misc/ast)
+   `scripts/generate-token-list <genesis-file> <usdc-token-address>` and commit
+   into [`tokenlists`](./tokenlists)
 1. Add configuration parameters to the following files:
     - [`tools/utils/src/constants.ts`](./tools/utils/src/constants.ts)
     - [`tools/utils/src/tokenlists.ts`](./tools/utils/src/tokenlists.ts)
@@ -66,13 +65,14 @@ flowchart TD;
     - [`source/wrapper/deploys-weth.js`](./source/wrapper/deploys-weth.js)
 1. Bump version number in `tools/utils/package.json` and commit the changes
 1. Rebuild `@tools/utils` with `yarn compile` and create a new package with `npm pack`
-1. Upload `airswap-utils-xxx.tgz` to the new release on GitHub
+1. Create a new release on GitHub and upload `airswap-utils-xxx.tgz`
 1. Update the `@airswap/utils` version in all `package.json` files and update
    dependencies with `yarn`
 1. Get an account with a few ATNs for funding the deployments
-1. Set the `PRIVATE_KEY` environment variable in `.env` and deploy each contract
-   with `yarn deploy --network NAME` in the order specified in the dependency
-   graph above
+1. Set the `PRIVATE_KEY` environment variable in `.env`
+1. Deploy the mock AirSwap token from [`misc/ast`](./misc/ast) and the contracts
+   from [`source`](./source) with `yarn deploy --network NAME` in the order
+   specified in the dependency graph above
 1. Bump version numbers in `package.json` of all affected packages and commit
    the updated `deploys.js` files
 1. Update dependency versions in all `package.json` files
