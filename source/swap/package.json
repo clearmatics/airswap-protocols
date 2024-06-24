@@ -30,7 +30,7 @@
     "owners": "hardhat run ./scripts/owner.js"
   },
   "devDependencies": {
-    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
     "@openzeppelin/contracts": "^4.8.3"
   },

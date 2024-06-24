@@ -42,21 +42,10 @@
   version "4.2.2-autonity.1"
   resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-4.2.2-autonity.1.tgz#1514c588a6c9b61176173f21ef717f613b7bfa5e"
 
-"@airswap/utils@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz":
-  version "4.3.2-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz#8df5b6e9403bbf653fb91d6bdd96dd9ce8281d4c"
-  dependencies:
-    "@metamask/eth-sig-util" "^5.0.2"
-    "@uniswap/token-lists" "^1.0.0-beta.24"
-    bignumber.js "^9.0.1"
-    ethereumjs-util "^7.1.5"
-    ethers "^5.7.2"
-    lz-string "^1.5.0"
-    valid-url "^1.0.9"
-
-"@airswap/utils@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.2.tgz":
-  version "4.3.2-autonity.2"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.2.tgz#15b9497e035ff65db77a068f302ec1c6a12174f0"
+"@airswap/utils@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz":
+  version "4.3.2-autonity.4"
+  uid "1c34626005452918ed63d2e4586391f7ba4c05aa"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz#1c34626005452918ed63d2e4586391f7ba4c05aa"
   dependencies:
     "@metamask/eth-sig-util" "^5.0.2"
     "@uniswap/token-lists" "^1.0.0-beta.24"

@@ -28,7 +28,7 @@
     "balances": "hardhat run ./scripts/balances.js"
   },
   "devDependencies": {
-    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz",
     "@airswap/merkle": "0.0.2",
     "@openzeppelin/contracts": "^4.8.3",
     "prompt-confirm": "^2.0.4"

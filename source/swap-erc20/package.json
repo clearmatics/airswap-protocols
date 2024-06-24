@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@airswap/staking": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-staking-4.2.2-autonity.1.tgz",
-    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-utils-4.3.2-autonity.1.tgz",
+    "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz",
     "prompt-confirm": "^2.0.4",
     "solady": "0.0.173"
   },
