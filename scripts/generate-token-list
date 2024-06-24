@@ -9,23 +9,45 @@ const ntnLogoURI =
 const usdcLogoURI =
   'https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png'
 
+const usdcAddress = '0x3a60C03a86eEAe30501ce1af04a6C04Cf0188700'
+const chainId = '65100003'
+const validatorAddresses = [
+  '0x551f3300FCFE0e392178b3542c009948008B2a9F',
+  '0xB12326F310FfB24dE8c5d71d14aBfB4561c72A59',
+  '0xD7798De146484a297472c6B863e69426AAc2a23E',
+  '0x27877A754b3032D3EA592BF28dF4f58Fd9348275',
+  '0x94d28f08Ff81A80f4716C0a8EfC6CAC2Ec74d09E',
+  '0x9791755CcCABCda07e190793087BD650279f6e1f',
+  '0x96bCa10D74D0439c6BAfE187C2397155c8C2F3e2',
+  '0x383A3c437d3F12f60E5fC990119468D3561EfBfc',
+  '0x7681161D3dE29F330ED16aa7c60cEC1edD46FcAa',
+  '0x7CC5E4687ECB172B21a56E202e7E88950DE98B66',
+  '0x94470A842Ea4f44e668EB9C2AB81367b6Ce01772',
+  '0x730D692f8b6af479f647891542f2aA5114924694',
+  '0xDf6D6729f2E972222F77CeA91e5F2C4613cF241A',
+  '0xd61a48b0e11B0Dc6b7Bd713B1012563c52591BAA',
+  '0xDCA5DFF3D42f2db3C18dBE823380A0A81db49A7E',
+  '0x100E38f7BCEc53937BDd79ADE46F34362470577B',
+  '0x41c005f62d8511262f1801265737587503451017',
+  '0xE4686A4C6E63A8ab51B458c52EB779AEcf0B74f7',
+  '0xf2b6DC122206398025D5b299b5a28Cb91b557B85',
+  '0xf6709934bADDDf7Dd79eED134A875984597E8148',
+  '0x1Be7f70BCf8393a7e4A5BcC66F6f15d6e35cfBBC',
+  '0xFf02373228e1133Da0a16340350532b813f463Dc',
+  '0x9d28e40E9Ec4789f9A0D17e421F76D8D0868EA44',
+  '0x725fC5416BDb173642D21DfC401519B0DCBf7f3b',
+  '0x71867c487b801f3328B4e1af2D2bE2e8358000Ee',
+  '0x99E2B4B27BDe92b42D04B6CF302cF564D2C13b74',
+  '0x527192F3D2408C84087607b7feE1d0f907821E17',
+  '0xdA699B797D901Dec38C422614caAa440AB4aA846',
+]
+
 async function exec(cmd) {
   return (await _exec(cmd)).stdout.trim()
 }
 
 async function main() {
-  if (process.argv.length < 4) {
-    console.error(`Usage: ${__filename} <genesis-file> <usdc-token-address>`)
-    process.exit(1)
-  }
-
-  const genesis = require(process.argv[2])
-
   const ntnAddress = await exec(`aut protocol contract-address`)
-  const usdcAddress = process.argv[3]
-  const validatorAddresses = genesis.config.autonity.validators.map(
-    (validator) => validator.nodeAddress
-  )
 
   const [ntnSymbol, ntnDecimals, usdcSymbol, usdcDecimals] = await Promise.all([
     exec('aut token symbol --ntn'),
@@ -61,7 +83,7 @@ async function main() {
         name: 'Newton',
         symbol: ntnSymbol,
         decimals: ntnDecimals,
-        chainId: genesis.config.chainId,
+        chainId: chainId,
         logoURI: ntnLogoURI,
       },
       {
@@ -69,7 +91,7 @@ async function main() {
         name: 'Mock USD Coin',
         symbol: usdcSymbol,
         decimals: usdcDecimals,
-        chainId: genesis.config.chainId,
+        chainId: chainId,
         logoURI: usdcLogoURI,
       },
       ...validators.map((validator) => ({
@@ -77,14 +99,14 @@ async function main() {
         name: `Liquid Newton for validator ${validator.node_address}`,
         symbol: validator.token_symbol,
         decimals: validator.token_decimals,
-        chainId: genesis.config.chainId,
+        chainId: chainId,
         logoURI: ntnLogoURI,
       })),
     ],
   }
 
   await fs.writeFile(
-    `${__dirname}/../tokenlists/tokenlist-${genesis.config.chainId}.json`,
+    `${__dirname}/../tokenlists/tokenlist-${chainId}.json`,
     JSON.stringify(tokenlist)
   )
 }
