@@ -1,6 +1,6 @@
 {
   "name": "@airswap/batch-call",
-  "version": "4.2.3-autonity.1",
+  "version": "4.2.3-autonity.2",
   "description": "Batch balance, allowance, order validity checks",
   "license": "MIT",
   "repository": {
@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "@airswap/utils": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz",
-    "@airswap/swap": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-4.2.2-autonity.1.tgz",
-    "@airswap/swap-erc20": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-erc20-4.3.1-autonity.1.tgz",
+    "@airswap/swap": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-4.2.2-autonity.2.tgz",
+    "@airswap/swap-erc20": "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-erc20-4.3.1-autonity.2.tgz",
     "@openzeppelin/contracts": "^4.8.3",
     "prompt-confirm": "^2.0.4"
   },

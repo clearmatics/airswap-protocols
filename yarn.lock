@@ -42,9 +42,18 @@
   version "4.3.1-autonity.1"
   resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-erc20-4.3.1-autonity.1.tgz#b418a06d1a33ec52063a98bbb90d062b28708689"
 
+"@airswap/swap-erc20@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-erc20-4.3.1-autonity.2.tgz":
+  version "4.3.1-autonity.2"
+  uid b5bb0108dc510f07a9aa45a429b8cdc626255fb4
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-erc20-4.3.1-autonity.2.tgz#b5bb0108dc510f07a9aa45a429b8cdc626255fb4"
+
 "@airswap/swap@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-4.2.2-autonity.1.tgz":
   version "4.2.2-autonity.1"
   resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-4.2.2-autonity.1.tgz#1514c588a6c9b61176173f21ef717f613b7bfa5e"
+
+"@airswap/swap@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-4.2.2-autonity.2.tgz":
+  version "4.2.2-autonity.2"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-4.2.2-autonity.2.tgz#e8f8a19f855539c9b88311ebe210ddb2e9dfea05"
 
 "@airswap/utils@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-utils-4.3.2-autonity.4.tgz":
   version "4.3.2-autonity.4"
