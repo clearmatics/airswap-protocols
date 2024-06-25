@@ -90,6 +90,8 @@ flowchart TD;
 1. Set the `SERVER_URL` environment variable in `.env` and configure the registry
    contract with `scripts/configure-registry`
 1. Check whether configuration was successful with `airswap registry:status`
+1. Update `src/constants/supportedNetworks.ts` in [clearmatics/airswap-web] and
+   add network icon to `public/images/networks/`
 1. Redeploy [clearmatics/airswap-web]
 
 [clearmatics/airswap-cli]: https://github.com/clearmatics/airswap-cli
