@@ -72,7 +72,7 @@ done
 
 airswap metadata:update
 
-TOKENS="$(echo -n "$(jq -r '.tokens[].symbol' "${TOKENLIST}")" | tr ' ' ',')"
+TOKENS="$(echo -en "$(jq -r '.tokens[].symbol' "${TOKENLIST}")" | tr '\n' ',')"
 
 expect <<-DONE
 	spawn airswap tokens:add
