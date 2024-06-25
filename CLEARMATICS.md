@@ -51,10 +51,9 @@ flowchart TD;
 ## How to add a new network
 
 1. Install Node v18.19.0 and install dependencies with `yarn`
-1. Download the genesis file of the network and find the USDC contract address
-1. Generate token list with
-   `scripts/generate-token-list <genesis-file> <usdc-token-address>` and commit
-   into [`tokenlists`](./tokenlists)
+1. Edit parameters in
+   [`scripts/generate-token-list`](./scripts/generate-token-list), run the
+   script and commit and push the new token list for the chain
 1. Add configuration parameters to the following files:
     - [`tools/utils/src/constants.ts`](./tools/utils/src/constants.ts)
     - [`tools/utils/src/tokenlists.ts`](./tools/utils/src/tokenlists.ts)
