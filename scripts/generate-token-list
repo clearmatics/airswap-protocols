@@ -11,7 +11,7 @@ const usdcLogoURI =
 
 const watnAddress = '0xcE17e51cE4F0417A1aB31a3c5d6831ff3BbFa1d2'
 const usdcAddress = '0x3a60C03a86eEAe30501ce1af04a6C04Cf0188700'
-const chainId = '65100003'
+const chainId = 65100003
 
 const validatorAddresses = [
   '0x551f3300FCFE0e392178b3542c009948008B2a9F',
