@@ -71,22 +71,22 @@ export async function getKnownTokens(
       token.symbol !== AIRSWAP_SYMBOL
     )
   })
-  if (stakingTokenAddresses[chainId]) {
-    const stakingTokens = getStakingTokens()
-    for (let i = 0; i < stakingTokens.length; i++) {
-      if (stakingTokens[i].chainId == chainId) {
-        tokens.push(stakingTokens[i])
-      }
-    }
-  }
-  if (wrappedNativeTokenAddresses[chainId]) {
-    const wrappedTokens = getWrappedTokens()
-    for (let i = 0; i < wrappedTokens.length; i++) {
-      if (wrappedTokens[i].chainId == chainId) {
-        tokens.push(wrappedTokens[i])
-      }
-    }
-  }
+  // if (stakingTokenAddresses[chainId]) {
+  //   const stakingTokens = getStakingTokens()
+  //   for (let i = 0; i < stakingTokens.length; i++) {
+  //     if (stakingTokens[i].chainId == chainId) {
+  //       tokens.push(stakingTokens[i])
+  //     }
+  //   }
+  // }
+  // if (wrappedNativeTokenAddresses[chainId]) {
+  //   const wrappedTokens = getWrappedTokens()
+  //   for (let i = 0; i < wrappedTokens.length; i++) {
+  //     if (wrappedTokens[i].chainId == chainId) {
+  //       tokens.push(wrappedTokens[i])
+  //     }
+  //   }
+  // }
   const hasToken: any = {}
   let length = tokens.length
   while (length--) {
