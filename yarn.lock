@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@airswap/batch-call@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-batch-call-4.2.3-autonity.1.tgz":
-  version "4.2.3-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-batch-call-4.2.3-autonity.1.tgz#a06487a17b989dc2d9ad8c697174a039c3ce9293"
+"@airswap/batch-call@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-batch-call-4.2.3-autonity.2.tgz":
+  version "4.2.3-autonity.2"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-batch-call-4.2.3-autonity.2.tgz#46ee0b7d6b141f99262707118431e896e9107f80"
 
 "@airswap/jsonrpc-client-websocket@0.0.1":
   version "0.0.1"
@@ -22,17 +22,13 @@
     ethereumjs-util "^7.0.7"
     web3-utils "^1.3.1"
 
-"@airswap/pool@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-pool-4.2.2-autonity.1.tgz":
-  version "4.2.2-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-pool-4.2.2-autonity.1.tgz#be6b3e1fd644f7243a65d77008ad1b53c652d906"
+"@airswap/pool@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-pool-4.2.2-autonity.2.tgz":
+  version "4.2.2-autonity.2"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-pool-4.2.2-autonity.2.tgz#c277454eae02b9b74a0b052d79061d6a6b29ff41"
 
-"@airswap/registry@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-registry-4.2.2-autonity.1.tgz":
-  version "4.2.2-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-registry-4.2.2-autonity.1.tgz#fce6ac2c4eaee907fa352cc2b6ca425dbba8f4ee"
-
-"@airswap/staking@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-staking-4.2.2-autonity.1.tgz":
-  version "4.2.2-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-staking-4.2.2-autonity.1.tgz#d7bccbcc9070c843099d4a90d475f96f7a7e9482"
+"@airswap/registry@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-registry-4.2.2-autonity.2.tgz":
+  version "4.2.2-autonity.2"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-registry-4.2.2-autonity.2.tgz#5da044a502a44a24bf851539eb61c10ec99a75b5"
 
 "@airswap/staking@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-staking-4.2.2-autonity.2.tgz":
   version "4.2.2-autonity.2"
@@ -46,10 +42,6 @@
   version "4.3.1-autonity.2"
   uid b5bb0108dc510f07a9aa45a429b8cdc626255fb4
   resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-erc20-4.3.1-autonity.2.tgz#b5bb0108dc510f07a9aa45a429b8cdc626255fb4"
-
-"@airswap/swap@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-4.2.2-autonity.1.tgz":
-  version "4.2.2-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-swap-4.2.2-autonity.1.tgz#1514c588a6c9b61176173f21ef717f613b7bfa5e"
 
 "@airswap/swap@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-swap-4.2.2-autonity.2.tgz":
   version "4.2.2-autonity.2"
@@ -68,9 +60,9 @@
     lz-string "^1.5.0"
     valid-url "^1.0.9"
 
-"@airswap/wrapper@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-wrapper-4.2.3-autonity.1.tgz":
-  version "4.2.3-autonity.1"
-  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.1/airswap-wrapper-4.2.3-autonity.1.tgz#d516bf8d27d0bbc938f29626e1a9c2ca1ea06fbe"
+"@airswap/wrapper@https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-wrapper-4.2.3-autonity.2.tgz":
+  version "4.2.3-autonity.2"
+  resolved "https://github.com/clearmatics/airswap-protocols/releases/download/pcgc-r6.2/airswap-wrapper-4.2.3-autonity.2.tgz#c823cefab9ed0d2c4cce4a8dadf1554fe2175e9d"
 
 "@babel/code-frame@^7.0.0":
   version "7.24.7"
